@@ -1,0 +1,1 @@
+var e=`admin_auth_v1`,t=`admin@bernardo.dev`,n=`admin123`;function r(){return typeof window>`u`?!1:window.localStorage.getItem(e)===`1`}function i(t,n){return t.trim().toLowerCase()===`admin@bernardo.dev`&&n===`admin123`?(window.localStorage.setItem(e,`1`),!0):!1}function a(){window.localStorage.removeItem(e)}export{a,i,n,r,t};
