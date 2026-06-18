@@ -162,17 +162,20 @@ export const resources = {
 } as const;
 
 if (!i18n.isInitialized) {
-  const saved =
-    typeof window !== "undefined" ? window.localStorage.getItem("lang") : null;
-  void i18n.use(initReactI18next).init({
+  i18n.use(initReactI18next);
+
+  i18n.init({
     resources,
     lng: "pt-BR",
     fallbackLng: "en",
     interpolation: { escapeValue: false },
+    initImmediate: false,
   });
-  
-  // After initializing, if there's a saved language, switch to it
-  if (typeof window !== "undefined" && saved && saved !== "pt-BR") {
+}
+
+if (typeof window !== "undefined") {
+  const saved = window.localStorage.getItem("lang");
+  if (saved && saved !== "pt-BR") {
     i18n.changeLanguage(saved);
   }
 }

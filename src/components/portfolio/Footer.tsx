@@ -11,7 +11,7 @@ export function Footer() {
         </div>
         <div className="text-xs">{t("footer.built")}</div>
         <div className="flex gap-2">
-          <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub" className="size-8 grid place-items-center rounded-md hover:bg-accent transition-colors">
+          <a href="https://github.com/Index-ProgramaDev" target="_blank" rel="noreferrer" aria-label="GitHub" className="size-8 grid place-items-center rounded-md hover:bg-accent transition-colors">
             <Github className="size-4" />
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="size-8 grid place-items-center rounded-md hover:bg-accent transition-colors">

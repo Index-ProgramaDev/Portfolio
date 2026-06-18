@@ -75,7 +75,7 @@ export function Header() {
               {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <a href="https://github.com/Index-ProgramaDev" target="_blank" rel="noreferrer" aria-label="GitHub">
                 <Github className="size-4" />
               </a>
             </Button>

@@ -102,11 +102,29 @@ var defaultOptions = {
 	unescape,
 	transDefaultProps: void 0
 };
+var setDefaults = (options = {}) => {
+	defaultOptions = {
+		...defaultOptions,
+		...options
+	};
+};
 var getDefaults = () => defaultOptions;
 //#endregion
 //#region node_modules/react-i18next/dist/es/i18nInstance.js
 var i18nInstance;
+var setI18n = (instance) => {
+	i18nInstance = instance;
+};
 var getI18n = () => i18nInstance;
+//#endregion
+//#region node_modules/react-i18next/dist/es/initReactI18next.js
+var initReactI18next = {
+	type: "3rdParty",
+	init(instance) {
+		setDefaults(instance.options.react);
+		setI18n(instance);
+	}
+};
 //#endregion
 //#region node_modules/react-i18next/dist/es/context.js
 var I18nContext = (0, import_react.createContext)();
@@ -271,4 +289,4 @@ var useTranslation = (ns, props = {}) => {
 	return ret;
 };
 //#endregion
-export { useTranslation as t };
+export { initReactI18next as n, useTranslation as t };

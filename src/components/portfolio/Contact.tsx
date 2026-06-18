@@ -33,10 +33,10 @@ export function Contact() {
   };
 
   const links = [
-    { icon: Mail, label: "Email", href: "mailto:hello@example.com" },
-    { icon: Github, label: "GitHub", href: "https://github.com" },
+    { icon: Mail, label: "Email", href: "mailto:danielbernardoinv@gmail.com" },
+    { icon: Github, label: "GitHub", href: "https://github.com/Index-ProgramaDev" },
     { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-    { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/" },
+    { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/558198714983" },
   ];
 
   return (
